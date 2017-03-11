@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<?xml-stylesheet type="text/xsl" href="merge.xsl"?>
+
+<mergeData newRoot="Table">
+  <fileList>
+    <fileItem>Table1.xml</fileItem>
+    <fileItem>Table2.xml</fileItem>
+	<fileItem>Table3.xml</fileItem>	
+   </fileList>
+</mergeData>

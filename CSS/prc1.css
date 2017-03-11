@@ -1,0 +1,312 @@
+/***********************************/
+/* responsive web design - enabled */
+/***********************************/
+
+/* remove default margin and padding used by browsers */
+h1{
+
+	text-align:justify;
+	color:white;
+}
+* {
+		margin:0px;
+		padding:0px;
+		list-style-type:none;
+	 }
+
+/* keep the entire body of website in a div block */
+
+.container {
+	width:960px;
+	margin:0px auto;
+	border: 2px dark grey;
+	
+	
+   }
+
+/* h	andle the following elements as block */ 
+header,nav,section,articles,aside,footer {
+		display:block;
+   }	 
+   
+.top {
+	background-color:rgba(0, 0, 0, 0.9);
+	
+}
+   
+/* logo display */
+   
+.logo {
+	height:125px;
+	width:150px;
+	float:left;
+	padding:10px;
+}
+.bld{
+	height:85px;
+	width:75px;
+	float:none;
+	padding:0px;
+	position:absolute;
+	right:380px;
+	top:28px;
+	
+}   
+.address{
+	float:right;
+	color:white;
+	margin-right:35px;
+	margin-top:-45px;
+}
+
+.store-title{
+ font-weight:bold;
+}
+.store-adr{
+ font-size:88%;
+}
+/* page navigation on header at top */
+
+.page_nav {
+	width:815px;
+	float:left;
+	height:100px;
+} 
+
+/* page navigation menu item */
+
+.page_nav ul li {
+	float:left;
+	padding:50px;
+}
+li a {
+text-decoration: none;
+color : white;
+} 
+
+/* dummy div tag used to keep navigation and section separate */
+
+.clear {
+	clear:both;
+}
+
+/* dividing the website content into section and aside */
+.section
+{
+	width:960px;
+}
+
+.section_left {
+	float:left;
+	width:700px;
+	background-color:black;
+	}
+
+.section_left div {
+	/*border:1px solid grey;*/
+	margin:5px 0px 5px 5px;
+	background-color:black;
+	padding:5px;
+	}
+
+.section_left h1 {
+  text-align:center;
+  font-size:50px;
+	}
+
+/* rstrbldng image display at the top */
+		
+.rstrbldng {
+width:680px;
+height:306px;
+}
+.rstr{
+width:680px;
+height:319px;	
+}
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 18px 67px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* dividing the website content into section and aside */
+
+.aside_right {
+	float:left;
+	width:260px;
+	height:690px;
+	background-color: rgb(80,80,80);
+
+}
+.video_css{
+width:240px;
+height:240px;
+} 
+
+.aside_right div {
+	margin:1px;
+	padding:5px;	
+	background-color:black;
+}
+
+/* page footer at bottom */
+
+.page_footer {
+	clear:both;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;	
+	font-size:20px;
+	color:white;
+	background-color:black;
+
+}
+	
+/***************************************/
+/* responsive web design - for mobile  */
+/***************************************/
+
+@media screen and (max-width:959px) {
+
+.container {
+	width:100%;
+  }
+
+.logo {
+	width:20%;
+}   
+
+.page_nav {
+	width:80%;
+}
+   
+.section_left {
+	width:70%;
+	}  
+	
+.aside_right {
+	width:30%;
+  }	
+	 
+}
+.container1{
+	color:white;
+	background-color:grey;
+	width:960px;
+	margin:0px auto;
+	border: 2px dark grey;
+	
+	}
+
+/*Star*/
+
+.rating {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  width: auto;
+  height: 20px;
+}
+
+.rating > input {
+  opacity: 0;
+  margin-right: 0%;
+}
+
+.rating > label {
+  position: relative;
+  
+  float: right;
+  background: url('IMAGES/star-off-big.png');
+  background-size: 20px 20px;
+}
+
+.rating > label:before {
+  display: block;
+  opacity: 0;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url('IMAGES/star-on-big.png');
+  background-size: 20px 20px;
+  transition: opacity 0.2s linear;
+}
+
+.rating > label:hover:before,  .rating > label:hover ~ label:before,  .rating:not(:hover) > :checked ~ label:before { opacity: 1; }
+
+
+/*table styles */
+
+.containerFeedback {
+	width:960px;
+	margin:0px auto;
+	border: 2px dark grey;
+	background-color:grey;
+	
+	
+   }
+
+.divContainer
+{
+	width:958px;
+	border:1px black solid;
+	
+}
+.tableContainer
+{
+	width:100%;
+	margin-top:0px;
+	margin-bottom:0px;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+	border: 1px solid #8ec4cc;
+	border-radius: 3px;
+	
+}
+.tableContainer_2col
+{
+	width: 100%;
+	margin: auto;
+	background-color: #A09F9F;
+	border-collapse: collapse;
+	border: 1px solid #8ec4cc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding-top:3px;
+		vertical-align:top;
+}
+.tableContainer_2col td:first-child
+{
+	width: 25%;
+	text-align: left;
+	font-family: Arial, helvetica, sans-serif;
+	color: #08383f;
+	font-size: 13px;
+	padding-left: 50px;
+	padding-top:5px;
+	
+}
+/* class defined for 2nd td */
+.tableContainer_2col td:first-child + td
+{
+	width: 75%;
+	text-align: left;
+	padding-top:5px;
+}
